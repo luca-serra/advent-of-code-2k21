@@ -27,10 +27,9 @@ if __name__ == "__main__":
     counter = 0
     previous_element = sum(input_list[:3])
     for i in range(1, len(input_list) - 2):
-        element = sum(input_list[i: i + 3])
+        element = sum(input_list[i : i + 3])
         if element > previous_element:
             counter += 1
         previous_element = element
 
     print(f"{counter} measurements are larger than the previous one.")
-    
